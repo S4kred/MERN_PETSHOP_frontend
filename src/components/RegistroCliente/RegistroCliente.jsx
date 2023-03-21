@@ -86,7 +86,7 @@ export default function RegistroCliente(props) {
         </Form.Group>
 
         <Button variant='primary' type='submit'>
-            {!loading ? "Cear cuenta" : <Spinner animation="border" />}
+            {!loading ? "Crear cuenta" : <Spinner animation="border" />}
         </Button>
       </Form>
       <Button variant='link' className='x' onClick={() => {setShowModal(false)}}>X</Button>
