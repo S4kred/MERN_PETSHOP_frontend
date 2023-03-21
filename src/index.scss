@@ -1,0 +1,166 @@
+@import "./../src/scss/index.scss";
+
+:root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body {
+  background-color: $background-light;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+.btn.btn-primary {
+  background-color: $primary-light;
+  border-color: $primary-light;
+  color: $font-dark;
+  font-weight: bold;
+  &:hover {
+    background-color: $font-green-dark;
+    color: $primary-dark-light;
+  }
+}
+
+.btn.btn-outline-primary {
+  border-color: $border-primary;
+  color: $font-dark;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary-light !important;
+  }
+}
+
+
+input.form-control,
+
+textarea.form-control {
+  background-color: $primary-light;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 1px solid $border-dark;
+  color: $font-green-dark !important;
+  margin-bottom: 10px;
+  font-size: 25px;
+
+  &:up {
+    background-color: $primary-dark;
+  }
+
+  &:focus {
+    background-color: $background-light;
+    box-shadow: none;
+    border-bottom: 1px solid $border-primary;
+  }
+  
+  
+
+}
+
+
+input.form-check-input {
+
+  border-color: $border-dark;
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:checked {
+    background-color: $border-dark;
+    border-color: $border-light;
+    color: $font-primary
+  }
+}
+
+select.form-select {
+  background-color: $primary-light;
+  border-color: $primary-light;
+  
+  &:focus {
+    border-color: $border-primary;
+    box-shadow:  0px 0px 25px $border-primary;
+  }
+
+  &:hover {
+    background-color: $primary-light;
+  }
+}
+
+.btn.btn-link {
+  font-weight: bold;
+  text-align: center;
+  color: $font-dark;
+  text-decoration: none;
+  
+  &:hover {
+    text-align: center;
+    color: $font-primary;
+  }
+}
+
+
+.x.btn.btn-link {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  font-weight: bold;
+  text-align: right;
+  color: $font-dark;
+  text-decoration: none;
+  width: min-content;
+  
+  &:hover {
+    color: $font-primary;
+  }
+}
+
+.table.table-dark.table-sm.table-striped.table-hover {
+  max-width: 100%;
+  border-color: $font-light;
+  justify-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+table.table-sm.table-striped.table-hover {
+  max-width: 100%;
+  border-color: $font-light;
+  justify-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card-body {
+  display: block;
+  width: 100%;
+  border: solid;
+  border-color: $font-light;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: transparentize($color: $font-light, $amount: 0.8);
+}
+
+.card-title.h5{
+  color: $font-dark;
+  font-weight: bold;
+}
+
+.card-text {
+  color: $font-light;
+  font-weight: bold;
+}
+

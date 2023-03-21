@@ -1,0 +1,53 @@
+@import "../../scss/index.scss";
+
+.home-vendedor {
+  background-color: $primary;
+  
+}
+
+.mb-3 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#fill-tab-example-tab-listaCLiente,
+#fill-tab-example-tab-listaVendedores-tab,
+#fill-tab-example-tab-pedidos {
+  color: $font-green-dark;
+  border-color: $font-light;
+
+  &:active,
+  &:focus {
+    color: $primary-dark;
+    background-color: transparentize($color: $font-light, $amount: 0.8);
+  }
+}
+
+.col {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+
+
+// #fill-tab-example-tab-listaCLiente {
+//   color: $font-green-dark;
+//   &:active {
+//     color: $primary-dark
+//   }
+// }
+
+// #fill-tab-example-tab-listaVendedores-tab {
+//   color: $font-green-dark;
+//   &:active {
+//     color: $primary-dark
+//   }
+// }
+
+// #fill-tab-example-tab-pedidos {
+//   color: $font-green-dark;
+//   &:active {
+//     color: $primary-dark
+//   }
+// }
